@@ -41,6 +41,7 @@ namespace HotelMM
                 menuTable.AddRow("4", "Pay and archive an invoice");
                 menuTable.AddRow("5", "Add a new invoice");
                 menuTable.AddRow("6", "Edit invoice");
+                menuTable.AddRow("7", "Exit application");
                 AnsiConsole.Render(rule);
                 Console.WriteLine();
                 Console.WriteLine();
@@ -71,6 +72,9 @@ namespace HotelMM
                         break;
                     case 6:
                         editInvoice(builder.ConnectionString);
+                        break;
+                    case 7:
+                        Environment.Exit(0);
                         break;
                 }
 
